@@ -1,0 +1,50 @@
+@import "../utils/variables";
+@import "../utils/extends";
+@import "../utils/mixins";
+
+
+.nav-dropdown {
+    // visibility: hidden;
+    display: none;
+    @include postion-absolute-top-left(100%,0px);
+    z-index: 10;
+    width: 15rem;
+    transform: translate(0, 1rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    border-top-width: 1px;
+    border-color: rgba(238,238,238,1);
+    background-color: rgba(255,255,255,1);
+    padding: 0.5rem 1.5rem;
+    opacity: 0;
+    transition-duration: 300ms;
+
+    &>li {
+        border-bottom-width: 1px;
+
+        a {
+            display: block;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            font-size: 14px;
+            color: #000;
+            transition-duration: 200ms;
+        }
+    }
+}
+
+.nav-mega-dropdown {
+    // visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 10;
+    width: 740px;
+    transform: translate(var(-50%), 1rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    border-width: 1px;
+    border-color: rgba(238,238,238,1);
+    background-color: rgba(255,255,255,1);
+    padding-bottom: 0px;
+    padding-left: 1.5rem;
+    opacity: 0;
+    transition-duration: 300ms;
+}

@@ -1,0 +1,26 @@
+@mixin postion-absolute-top-left($top,$left){
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin position-absolute-top-right($top,$right){
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+@mixin position-absolute-bottom-right($bottom,$left) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+@mixin font-size-weight($fs,$fw){
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin flex-grow($flex-grow){
+    display: flex;
+    flex-grow: $flex-grow;
+}
